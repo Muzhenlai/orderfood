@@ -1,0 +1,110 @@
+html{
+  font-size: 62.5%;
+}
+.my-img{
+  width: 64px;
+  height: 64px;
+}
+.margin-0{
+  margin:0;
+}
+.margin-10{
+  margin:10px 0;
+}
+.word-onerem{
+  font-size: 1rem;
+}
+.word-15{
+  font-size: 1.5rem;
+}
+.text-black{
+  color:black;
+}
+.padding-10{
+  padding: 10px;
+}
+/*star*/
+div.star{
+  position: fixed;
+  left:50%;
+  top:50%;
+  width: 100%;
+  margin-top:-16vh;
+  margin-left: -50vw;
+  border:0;
+}
+div.star h1{
+  color:blue;
+  font-size: 8rem;
+}
+div.star img{
+  width: 100%;
+}
+div.star-body{
+  padding: 0;
+}
+/*main*/
+nav.navbar-main{
+  border:0;
+}
+.glyphicon-search.main-search{
+  color:black;
+}
+@media screen and (min-width: 320px) and (max-width: 400px){
+  .form-group.has-success.has-feedback{
+    margin-top: 9vh!important;
+  }
+  ol.breadcrumb{
+    margin-top: 9vh!important;
+  }
+  .panel-body>form{
+    margin-top: 9vh!important;
+  }
+  .my-order2 p{
+    margin-top: 9vh!important;
+  }
+}
+.my-order2 p{
+  margin-top: 7vh;
+  padding: 20px;
+}
+.form-group.has-success.has-feedback{
+  margin-top: 7vh;
+}
+ol.breadcrumb{
+  margin-top: 7vh;
+}
+.panel-body>form{
+  margin-top: 7vh;
+}
+a.btn.btn-success.word-onerem{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 4vh;
+}
+a.btn.btn-warning.word-onerem{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 4vh;
+  text-align: left;
+}
+a.btn.btn-warning.word-onerem span{
+  padding-right: 2vw;
+}
+.nav-pills > li + li{
+  margin:0;
+}
+#order-success{
+  margin-top:14vh;
+}
+#order-success>p{
+  padding: 20px;
+  border-radius: 4px;
+}
+#details{
+  z-index: 999;
+}
+#order1.panel.panel-warning{
+  position: fixed;
+  width: 100%;
+}

@@ -1,0 +1,29 @@
+<div id="details" class="panel panel-warning">
+  <div ng-include=" 'tpl/header.html' "></div>
+  <div class="panel-body">
+    <ol class="breadcrumb bg-danger">
+      <li><a href="#">首页</a></li>
+      <li><a href="#" class="text-black">详情</a></li>
+    </ol>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <h3>{{currentFood.foodName}}</h3>
+          <img ng-src="{{currentFood.foodBigImg}}">
+          <div class="caption">
+            <p><span class="">主要原料:</span>{{currentFood.foodOri}}</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque distinctio esse, facilis harum impedit in molestias nulla officiis omnis perferendis placeat quaerat quam ullam unde, veritatis vero, voluptatibus voluptatum*3</p>
+            <hr class="margin-10">
+            <span class="text-danger">{{currentFood.foodPrice}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-right bg-warning padding-10"><a href="#/order1" class="btn btn-success" role="button">我要订餐</a> <a href="#/main" class="btn btn-warning" role="button">我再看看</a></p>
+  </div>
+  <div ng-include=" 'tpl/footer.html' "></div>
+</div>
+
+
+
+

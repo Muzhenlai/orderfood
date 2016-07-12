@@ -1,0 +1,33 @@
+<div id="main" class="panel panel-warning">
+  <!--header-->
+  <div ng-include=" 'tpl/header.html' "></div>
+  <!--main-body-->
+  <div class="panel-body">
+    <div class="form-group has-success has-feedback">
+      <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status" placeholder="搜索菜品名称和原料...">
+      <span class="glyphicon glyphicon-search form-control-feedback main-search" aria-hidden="true"></span>
+      <span id="inputSuccess2Status" class="sr-only">(success)</span>
+    </div>
+    <ul id="media" class="media-list">
+      <li class="media" ng-repeat="food in proData" ng-click="toDetails()">
+        <div class="media-left media-middle">
+          <a>
+            <img class="media-object" ng-src="{{food.foodImgUrl}}">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading word-15">{{food.foodName}}</h4>
+          <p class=" word-onerem">主要食料：{{food.foodOri}}</p>
+          <hr class="margin-10"/>
+          <span class="text-danger">{{food.foodPrice}}</span>
+        </div>
+      </li>
+    </ul>
+    <a href="" class="btn btn-success word-onerem" ng-show="isMore" ng-click="addFoods()">加载更多</a>
+    <a href="" class="btn btn-warning word-onerem" ng-show="noMore"><span class="glyphicon glyphicon-warning-sign"></span>没有更多数据了!</a>
+  </div>
+  <!--footer-->
+  <div ng-include=" 'tpl/footer.html' "></div>
+</div>
+
+
